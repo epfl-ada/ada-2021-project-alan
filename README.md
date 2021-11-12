@@ -1,17 +1,17 @@
 ## Recreating the Political Spectrum with Quotebank
 <i style="text-align: center;"> Ali Benabdallah, Cornelius van den Heuvel, Jiri Jirka Lhotka, Francesco Salvi</i>
 
-#### Abstract
+### Abstract
 The search for political spectrum, i.e. a set of independent political dimensions which enable characterization of political positions in relation to one another, has long been a focus of political science research. While most commonly used models are primarily based on the left/right division dating all the way from the French Revolution, many political scientists argue it no longer accurately characterizes the political divisions of today ([1](https://www.perlego.com/book/532600/beyond-liberal-and-conservative-reassessing-the-political-spectrum-pdf), [2](https://ideas.repec.org/p/osf/socarx/tr8g5.html)). In this project, we propose to create a political spectrum empirically by leveraging the Quotebank dataset ([3](https://dl.acm.org/doi/10.1145/3437963.3441760)). Using topic and sentiment extraction applied to recent quotes of American politicians on the federal level, we will obtain their sentiments on current issues and perform dimensionality reduction to find the most divisive axes. Further analysis and interpretation of the resulting vector space will allow us to redefine the political spectrum based on the most contentious issues.  
 
 
-#### Files in this repo
+### Files in this repo
 
 - **Data Wrangling.ipynb**: data preprocessing
 - **Topic Extraction.ipynb** and **Sentiment Analysis.ipynb**: Initial explorations of tools for eponymous methods **TODO: Add interlink via GitHub**.
 
 
-#### Research questions
+### Research questions
 
 1. **What are the most important axes of political division today?**
 To answer this question, we will first find the most significant dimensions of the topic-sentiment vector space (for technical details see the [Methods](#Methods) section). These dimensions define the topics on which current politicians are most divided. Then, to achieve interpretability, we will look at the topic-sentiment combinations that most define each axis's extremes. From this, we will empirically derive and interpret the most important axes similarly to how the Big Five personality traits were derived in psychology [(4)](https://dl.acm.org/doi/10.1145/3437963.3441760).
@@ -25,7 +25,7 @@ As an extension of the project, we propose to also analyse the position of media
 4. **Extension: Where do you stand?**
 As another extension, we propose to turn the quotes which best describe the vector vector space (e.g. axes extremes) into a questionnaire where participants can express their agreement/disagreement with such statements and discover their position on our political map, similarly to what [politicalcompass.org](politicalcompass.org) provides.
 
-#### Methods
+### Methods
 Our pipeline can be split into a series of phases, each associated with certain tools/methods:
 
 - **Data Wrangling**: Quotebank quotation-centric database will be processed for each year of phase E (2015-2020), to perform initial cleanings, filter for US modern politicians using Wikidata Qids and enrich data with domains information. This has already been largely accomplished while exploring data for Milestone 2. Tools: **Apache Sparks, Wikidata APIs**.
@@ -36,12 +36,12 @@ Our pipeline can be split into a series of phases, each associated with certain 
 
 - **Building opinions, dimensionality reduction**: For each politician, we will define and calculate their **opinion** as a vector with dimensionality equal to the number of extracted topics where each value is the average of all the sentiments in quotes about the topic. Then, we will perform dimensionality reduction to extract the most meaningful axes. Tools: **PCA, t-SNE**.
 
-#### Feasibility assessment
+### Feasibility assessment
 - **Data Wrangling**: We loaded and filtered the whole dataset, yielding a reduced dataset of approximately 9% of the original size (the reduced dataset is saved as a set of .parquet files, one for each year).
 - **BERTopic / LDA**:
 - **Sentiment analysis**: Applying VADER on a test dataset of 10000 quotes takes 2.9 seconds, hence it is expected to take less than 1hour on the reduced dataset.
 
-#### Proposed timeline
+### Proposed timeline
 **November 12 - November 26**: Homework 2 + start Scaling up
 
 **November 26 - December 3**: Scaling up: Topic Extraction and Sentiment Analysis on the whole dataset, building opinion vectors.
@@ -50,7 +50,7 @@ Our pipeline can be split into a series of phases, each associated with certain 
 
 **December 10 - December 17**: Data story writeup, notebooks cleaning and answering research questions.
 
-#### Team organization
+### Team organization
 Since we all wish to gain experience with the whole pipeline, the entire team will participate in all steps of the work with designated people serving as "leaders" to avoid [diffusion of responsibility](https://en.wikipedia.org/wiki/Diffusion_of_responsibility):
 - Lukas – Sentiment Analysis
 - Ali – Topic Extraction
@@ -58,5 +58,5 @@ Since we all wish to gain experience with the whole pipeline, the entire team wi
 - Francesco – Data Story
 
 
-#### Conclusion
+### Conclusion
 In recent years, ML-based natural language processing has achieved impactful results in political science. For example, sentiment-analysis-based models have been shown to extract political ideology from news articles with 70% accuracy and F1-scores nearing 0.8 ([6](https://arxiv.org/abs/1809.03485), [7](https://aclanthology.org/P14-1105/)), showing that automated detection of political sentiments – the core of the method presented here – is possible and meaningful. In this project, we will leverage sentiment analysis together with Quotebank, a vast dataset of quotations, to (1) extract current topics that govern the political debate, and (2) find the most divisive topic-sentiment axes, recreating the political spectrum. Two main expected challenges of this work are: (1) missing values in the opinion vectors as not all politicians have expressed their opinion on all extracted topics; and (2) interpretation of the most significant axes of the political spectrum. We are confident that these issues are addressable and that our approach will lead to novel insights into the American politics of today.
