@@ -37,9 +37,9 @@ Our pipeline can be split into a series of phases, each associated with certain 
 - **Building opinions, dimensionality reduction**: For each politician, we will define and calculate their **opinion** as a vector with dimensionality equal to the number of extracted topics where each value is the average of all the sentiments in quotes about the topic. Then, we will perform dimensionality reduction to extract the most meaningful axes. Tools: **PCA, t-SNE**.
 
 ### Feasibility assessment
-- **Data Wrangling**: Loading and filtering the entire dataset yielded a *reduced dataset* of approximately 9% of original size.
-- **BERTopic / LDA**:
-- **Sentiment analysis**: As applying VADER on 10000 quotes took 2.9 seconds, we expect it to take less than 1h on the reduced dataset.
+- **Data Wrangling**: Already done. Loading and filtering the entire dataset yielded a *reduced dataset* of approximately 9% of original size - about 12 milions quotes.
+- **Topic Extraction**: 5 hours to fit BERTopic and 4 hours to assign topic labels to the filtered dataset. 
+- **Sentiment analysis**: About 1 hour to assign a sentiment to each quote in the filtered dataset.
 
 ### Proposed timeline
 **November 12 - November 26**: Homework 2 + start Scaling up
@@ -51,11 +51,11 @@ Our pipeline can be split into a series of phases, each associated with certain 
 **December 10 - December 17**: Data story writeup, notebooks cleaning and answering research questions.
 
 ### Team organization
-Since we all wish to gain experience with the whole pipeline, the entire team will participate in all steps of the work with designated people serving as "leaders" to avoid [diffusion of responsibility](https://en.wikipedia.org/wiki/Diffusion_of_responsibility):
+In principle, the whole team will contribute in all the steps of the pipeline, since we all wish to gain experience with them. Hoewever, to avoid [diffusion of responsibility](https://en.wikipedia.org/wiki/Diffusion_of_responsibility), we will designate specific people serving as "leaders" for specific tasks:
 - Lukas – Sentiment Analysis
 - Ali – Topic Extraction
-- Jirka – Scale-up + Axes interpretation
-- Francesco – Data Story
+- Jirka – Scale-up, Axes interpretation
+- Francesco – Data Wrangling, case studies and Data Story
 
 
 ### Conclusion
