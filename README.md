@@ -37,7 +37,7 @@ Our pipeline can be split into a series of phases, each associated with certain 
 - **Building opinions, dimensionality reduction**: For each politician, we will define and calculate their **opinion** as a vector with dimensionality equal to the number of extracted topics where each value is the average of all the sentiments in quotes about the topic. Then, we will perform dimensionality reduction to extract the most meaningful axes. Tools: **PCA, t-SNE**.
 
 ### Feasibility assessment
-- **Data Wrangling**: Loading and filtering the entire dataset yielded a *reduce dataset* of approximately 9% of original size.
+- **Data Wrangling**: Loading and filtering the entire dataset yielded a *reduced dataset* of approximately 9% of original size.
 - **BERTopic / LDA**:
 - **Sentiment analysis**: As applying VADER on 10000 quotes took 2.9 seconds, we expect it to take less than 1h on the reduced dataset.
 
