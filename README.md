@@ -7,8 +7,8 @@ The search for political spectrum, i.e. a set of independent political dimension
 
 ### Files in this repo
 
-- **Data Wrangling.ipynb**: data preprocessing
-- **Topic Extraction.ipynb** and **Sentiment Analysis.ipynb**: Initial explorations of tools for eponymous methods **TODO: Add interlink via GitHub**.
+- **[DataWrangling.ipynb](DataWrangling.ipynb)**: Data preprocessing
+- **[TopicExtraction.ipynb](TopicExtraction.ipynb)** and **[SentimentAnalysis.ipynb](SentimentAnalysis.ipynb)**: Initial explorations of tools for eponymous methods 
 
 
 ### Research questions
