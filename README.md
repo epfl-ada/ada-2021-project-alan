@@ -51,7 +51,7 @@ Our pipeline can be split into a series of phases, each associated with certain 
 **December 10 - December 17**: Data story writeup, notebooks cleaning and answering research questions.
 
 ### Team organization
-In principle, the whole team will try to contribute in all the steps of the pipeline, since we all wish to gain experience with them. Hoewever, to avoid [diffusion of responsibility](https://en.wikipedia.org/wiki/Diffusion_of_responsibility), we will designate specific people serving as "leaders" for specific tasks:
+In principle, the whole team will contribute in all the steps of the pipeline, since we all wish to gain experience with them. Hoewever, to avoid [diffusion of responsibility](https://en.wikipedia.org/wiki/Diffusion_of_responsibility), we will designate specific people serving as "leaders" for specific tasks:
 - Lukas – Sentiment Analysis
 - Ali – Topic Extraction
 - Jirka – Scale-up, Axes interpretation
