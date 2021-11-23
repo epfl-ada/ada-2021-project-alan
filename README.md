@@ -23,7 +23,7 @@ Having found and interpreted the axes, we will further look at individual politi
 As an extension of the project, we propose to also analyse the position of media within the topic-sentiment vector space. This would consist of grouping all quotes according to their source newspaper, extracting the topic and sentiment associated with each quote, and analysing which newspapers cluster together in the topic-sentiment vector space – indicating a biased news source – and which newspapers cover a wide spectrum of viewpoints. 
 
 4. **Extension: Where do you stand?**
-As another extension, we propose to turn the quotes which best describe the vector vector space (e.g. axes extremes) into a questionnaire where participants can express their agreement/disagreement with such statements and discover their position on our political map, similarly to what [politicalcompass.org](politicalcompass.org) provides.
+As another extension, we propose to turn the quotes which best describe the vector vector space (e.g. axes extremes) into a questionnaire where participants can express their agreement/disagreement with such statements and discover their position on our political map, similarly to what [politicalcompass.org](www.politicalcompass.org) provides.
 
 ### Methods
 Our pipeline can be split into a series of phases, each associated with certain tools/methods:
