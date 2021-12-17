@@ -8,6 +8,8 @@ The search for political spectrum, i.e. a set of independent political dimension
 
 ## Repo structure
 
+Our code is divised into sequential notebooks that deal with the different steps of our pipeline, described below.
+
 ```bash
 .
 ├── 1_DataWrangling.ipynb: Data wrangling, filtering and data enrichment.
