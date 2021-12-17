@@ -1,5 +1,5 @@
 ## Recreating the Political Spectrum with Quotebank
-<i style="text-align: center;"> Ali Benabdallah, Cornelius van den Heuvel, Jiri Jirka Lhotka, Francesco Salvi</i>
+<i style="text-align: center;"> Francesco Salvi, Jirka Lhotka, Lukas Cornelius van den Heuvel and Ali Benabdallah</i>
 
 ### Abstract
 The search for political spectrum, i.e. a set of independent political dimensions which enable characterization of political positions in relation to one another, has long been a focus of political science research. While most commonly used models are primarily based on the left/right division dating all the way from the French Revolution, many political scientists argue it no longer accurately characterizes the political divisions of today ([1](https://www.perlego.com/book/532600/beyond-liberal-and-conservative-reassessing-the-political-spectrum-pdf), [2](https://ideas.repec.org/p/osf/socarx/tr8g5.html)). In this project, we propose to create a political spectrum empirically by leveraging the Quotebank dataset ([3](https://dl.acm.org/doi/10.1145/3437963.3441760)). Using topic and sentiment extraction applied to recent quotes of American politicians on the federal level, we will obtain their sentiments on current issues and perform dimensionality reduction to find the most divisive axes. Further analysis and interpretation of the resulting vector space will allow us to redefine the political spectrum based on the most contentious issues.  
@@ -22,7 +22,7 @@ Our pipeline can be split into a series of phases, each associated with certain 
 
 - **Data Wrangling**: Quotebank quotation-centric database was processed for each year of phase E (2015-2020), to perform initial cleanings, filter for US modern politicians using Wikidata Qids and enrich data with domains information. This had already been largely accomplished while exploring data for Milestone 2. Tools: **Apache Sparks, Wikidata APIs**.
 
-- **Topic Extraction**: The preprocessed data was then be used to perform topic extraction and get a list of meaningful topics, with a pretrained model based on BERT. Then, keeping only the quotes of politicians with a specified minimum number of quotes, each entry in the filtered dataset was be assigned a (list of) topic(s), discarding irrelevant quotes. Tools: **BERTopic**.
+- **Topic Extraction**: The preprocessed data was then be used to perform topic extraction and get a list of meaningful topics, with a pretrained model based on BERT. Then, each entry in the filtered dataset was be assigned a (list of) topic(s), discarding irrelevant quotes. Tools: **BERTopic**.
 
 - **Sentiment Analysis**: Each quote of the dataset was be assigned a score based on the sentiment it conveys, ranging from negative, neutral to positive. Tools: **VADER**.
 
@@ -36,5 +36,5 @@ In principle, the whole team contributed in all the steps of the pipeline, as we
 - Ali - Topic Extraction, Exploratory Analyses
 
 
-### Conclusion
-We have managed to find and interpret 3 axes that divide american politicians in accordance with their real-life beliefs (e.g. parties are divided, radicals further apart, moderates closer together). You can find out more about our code in this repository and read our [data story](https://the-political-compass.github.io/data-driven-political-compass/) as well as its [code](https://github.com/the-political-compass/data-driven-political-compass)
+### Conclusions
+We have managed to find and interpret 3 axes that divide american politicians in accordance with their real-life beliefs (e.g. parties are divided, radicals further apart, moderates closer together), and have analyzed what are the most significant topics with respect to partisan divide. You can find out more about our work in this repository, or reading our [data story](https://the-political-compass.github.io/data-driven-political-compass/) as well as its [code](https://github.com/the-political-compass/data-driven-political-compass).
