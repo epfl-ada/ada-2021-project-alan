@@ -49,7 +49,7 @@ Our pipeline can be split into a series of phases, each associated with certain 
 
 In principle, the whole team contributed in all the steps of the pipeline, as we all wished to gain experience with them. Hoewever, to avoid [diffusion of responsibility](https://en.wikipedia.org/wiki/Diffusion_of_responsibility), we designated specific people serving as "leaders" for specific tasks:
 
-- Francesco - Data Wrangling, Dimensionality Reduction, Notebooks Finalization
+- Francesco - Data Wrangling, Dimensionality Reduction, Notebooks Curation
 - Lukas - Sentiment Analysis, Topic Analysis, Data Story Visualizations
 - Jirka - Scaling up, Building Opinions, Data Story Writeup
 - Ali - Topic Extraction, Exploratory Analyses
