@@ -1,4 +1,4 @@
-# A data-driven Political Compass
+# [A data-driven Political Compass](https://the-political-compass.github.io/data-driven-political-compass/)
 
 *Francesco Salvi, Jirka Lhotka, Lukas Cornelius van den Heuvel and Ali Benabdallah*
 
