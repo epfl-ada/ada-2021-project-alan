@@ -8,7 +8,7 @@ The search for political spectrum, i.e. a set of independent political dimension
 
 ## Repo structure
 
-Our code is divised into sequential notebooks that deal with the different steps of our pipeline, described below.
+Our code is divided into sequential notebooks that deal with the different steps of our pipeline, described below.
 
 ```bash
 .
@@ -34,6 +34,7 @@ To answer this question, we will first find the most significant dimensions of t
 Having found and interpreted the axes, we will further look at individual politicians' positions to answer the following questions: Where does the average democrat/republican stand? Are the parties equally divided or is one more clustered around its centre than the other? Are moderate politicians from each party closer to the other party's mean than radicals?
 
 ## Methods
+
 Our pipeline can be split into a series of phases, each associated with certain tools/methods:
 
 - **Data Wrangling**: Quotebank quotation-centric database was processed for each year of phase E (2015-2020), to perform initial cleanings, filter for US modern politicians using Wikidata Qids and enrich data with domains information. This had already been largely accomplished while exploring data for Milestone 2. Tools: **Apache Sparks, Wikidata APIs**.
@@ -45,12 +46,14 @@ Our pipeline can be split into a series of phases, each associated with certain 
 - **Building opinions, dimensionality reduction**: For each politician, we have defined and calculated their **opinion** as a vector with dimensionality equal to the number of extracted topics where each value is the average of all the sentiments in quotes about the topic. Then, we have perform dimensionality reduction to extract the most meaningful axes. Tools: **PCA, t-SNE, UMAP, NCA**.
 
 ## Team contibution
+
 In principle, the whole team contributed in all the steps of the pipeline, as we all wished to gain experience with them. Hoewever, to avoid [diffusion of responsibility](https://en.wikipedia.org/wiki/Diffusion_of_responsibility), we designated specific people serving as "leaders" for specific tasks:
+
 - Francesco - Data Wrangling, Dimensionality Reduction, Notebooks Finalization
 - Lukas - Sentiment Analysis, Topic Analysis, Data Story Visualizations
 - Jirka - Scaling up, Building Opinions, Data Story Writeup
 - Ali - Topic Extraction, Exploratory Analyses
 
-
 ## Conclusions
+
 We have managed to find and interpret 3 axes that divide american politicians in accordance with their real-life beliefs (e.g. parties are divided, radicals further apart, moderates closer together), and have analyzed what are the most significant topics with respect to partisan divide. You can find out more about our work in this repository, or reading our [data story](https://the-political-compass.github.io/data-driven-political-compass/) as well as its [code](https://github.com/the-political-compass/data-driven-political-compass).
