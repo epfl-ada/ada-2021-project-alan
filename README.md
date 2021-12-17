@@ -10,17 +10,17 @@ The search for political spectrum, i.e. a set of independent political dimension
 
 ```bash
 .
-├── [1_DataWrangling.ipynb](1_DataWrangling.ipynb): Data wrangling, filtering and data enrichment.
-├── [2_TopicExtraction.ipynb](2_TopicExtraction.ipynb): Topic extraction and prediction.
-├── [3_SentimentAnalysis.ipynb](3_SentimentAnalysis.ipynb): Sentiment analysis.
-├── [4_BuildOpinions.ipynb](4_BuildOpinions.ipynb): Creation of the opinions matrix.
-├── [5_TopicAnalysis.ipynb](5_TopicAnalysis.ipynb): Analyses of dominant and most divisive topics.
-├── [6_PoliticalCompass.ipynb](6_PoliticalCompass.ipynb)
+├── 1_DataWrangling.ipynb: Data wrangling, filtering and data enrichment.
+├── 2_TopicExtraction.ipynb: Topic extraction and prediction.
+├── 3_SentimentAnalysis.ipynb: Sentiment analysis.
+├── 4_BuildOpinions.ipynb: Creation of the opinions matrix.
+├── 5_TopicAnalysis.ipynb: Analyses of dominant and most divisive topics.
+├── 6_PoliticalCompass.ipynb
 ├── Milestone2
-│   ├── [README_Milestone2.md](Milestone2/README_Milestone2.md)
-│   ├── [SentimentAnalysis_exploration.ipynb](Milestone2/SentimentAnalysis_exploration.ipynb)
-│   └── [TopicExtraction_exploration.ipynb](Milestone2/TopicExtraction_exploration.ipynb)
-└── [README.md](README.md)
+│   ├── README_Milestone2.md
+│   ├── SentimentAnalysis_exploration.ipynb
+│   └── TopicExtraction_exploration.ipynb
+└── README.md
 ```
 
 ## Research questions
