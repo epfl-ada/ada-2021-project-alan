@@ -1,27 +1,26 @@
 # A data-driven Political Compass
-## Recreating the Political Spectrum with Quotebank
-<i style="text-align: center;"> Francesco Salvi, Jirka Lhotka, Lukas Cornelius van den Heuvel and Ali Benabdallah</i>
+
+*Francesco Salvi, Jirka Lhotka, Lukas Cornelius van den Heuvel and Ali Benabdallah*
 
 ## Abstract
-The search for political spectrum, i.e. a set of independent political dimensions which enable characterization of political positions in relation to one another, has long been a focus of political science research. While most commonly used models are primarily based on the left/right division dating all the way from the French Revolution, many political scientists argue it no longer accurately characterizes the political divisions of today ([1](https://www.perlego.com/book/532600/beyond-liberal-and-conservative-reassessing-the-political-spectrum-pdf), [2](https://ideas.repec.org/p/osf/socarx/tr8g5.html)). In this project, we propose to create a political spectrum empirically by leveraging the Quotebank dataset ([3](https://dl.acm.org/doi/10.1145/3437963.3441760)). Using topic and sentiment extraction applied to recent quotes of American politicians on the federal level, we will obtain their sentiments on current issues and perform dimensionality reduction to find the most divisive axes. Further analysis and interpretation of the resulting vector space will allow us to redefine the political spectrum based on the most contentious issues.  
 
+The search for political spectrum, i.e. a set of independent political dimensions which enable characterization of political positions in relation to one another, has long been a focus of political science research. While most commonly used models are primarily based on the left/right division dating all the way from the French Revolution, many political scientists argue it no longer accurately characterizes the political divisions of today ([1](https://www.perlego.com/book/532600/beyond-liberal-and-conservative-reassessing-the-political-spectrum-pdf), [2](https://ideas.repec.org/p/osf/socarx/tr8g5.html)). In this project, we propose to create a political spectrum empirically by leveraging the Quotebank dataset ([3](https://dl.acm.org/doi/10.1145/3437963.3441760)). Using topic and sentiment extraction applied to recent quotes of American politicians on the federal level, we will obtain their sentiments on current issues and perform dimensionality reduction to find the most divisive axes. Further analysis and interpretation of the resulting vector space will allow us to redefine the political spectrum based on the most contentious issues.  
 
 ## Repo structure
 
-```
+```bash
 .
-├── README.md
-├── 1. DataWrangling.ipynb: Data wrangling, filtering and data enrichment.
-├── 2. TopicExtraction.ipynb: Topic extraction and prediction.
-├── 3. SentimentAnalysis.ipynb: Sentiment analysis.
-├── 4. BuildOpinions.ipynb: Creation of the opinions matrix.
-├── 5. TopicAnalysis.ipynb: Analyses of dominant and most divisive topics.
-├── 6. PoliticalCompass.ipynb: Dimensionality reduction and axes interpretation.
-├── Milestone2: Notebooks and README submitted for Milestone 2.
-|   ├── README_MS2.md
-│   ├── TopicExtraction_exploration.ipynb
-│   ├── SentimentAnalysis_exploration.ipynb
-.
+├── [1_DataWrangling.ipynb](1_DataWrangling.ipynb): Data wrangling, filtering and data enrichment.
+├── [2_TopicExtraction.ipynb](2_TopicExtraction.ipynb): Topic extraction and prediction.
+├── [3_SentimentAnalysis.ipynb](3_SentimentAnalysis.ipynb): Sentiment analysis.
+├── [4_BuildOpinions.ipynb](4_BuildOpinions.ipynb): Creation of the opinions matrix.
+├── [5_TopicAnalysis.ipynb](5_TopicAnalysis.ipynb): Analyses of dominant and most divisive topics.
+├── [6_PoliticalCompass.ipynb](6_PoliticalCompass.ipynb)
+├── Milestone2
+│   ├── [README_Milestone2.md](Milestone2/README_Milestone2.md)
+│   ├── [SentimentAnalysis_exploration.ipynb](Milestone2/SentimentAnalysis_exploration.ipynb)
+│   └── [TopicExtraction_exploration.ipynb](Milestone2/TopicExtraction_exploration.ipynb)
+└── [README.md](README.md)
 ```
 
 ## Research questions
