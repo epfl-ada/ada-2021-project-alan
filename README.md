@@ -45,7 +45,7 @@ Our pipeline can be split into a series of phases, each associated with certain 
 
 - **Building opinions, dimensionality reduction**: For each politician, we have defined and calculated their **opinion** as a vector with dimensionality equal to the number of extracted topics where each value is the average of all the sentiments in quotes about the topic. Then, we have perform dimensionality reduction to extract the most meaningful axes. Tools: **PCA, t-SNE, UMAP, NCA**.
 
-## Team contibution
+## Team contibutions
 
 In principle, the whole team contributed in all the steps of the pipeline, as we all wished to gain experience with them. Hoewever, to avoid [diffusion of responsibility](https://en.wikipedia.org/wiki/Diffusion_of_responsibility), we designated specific people serving as "leaders" for specific tasks:
 
